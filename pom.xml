@@ -12,9 +12,6 @@
     <artifactId>Ehealth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <configuration>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-    </configuration>
     <name>Ehealth</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -58,6 +55,7 @@
                     <packagingExcludes>**/.classpath,**/.project,**/.settings/**</packagingExcludes>
                     <!-- Exclude files from source directory -->
                     <warSourceExcludes>**/.classpath,**/.project,**/.settings/**</warSourceExcludes>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>
