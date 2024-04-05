@@ -50,9 +50,10 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.3</version>
                 <configuration>
-                    <packagingExcludes>
-                        **/.classpath, **/.project, **/.settings/
-                    </packagingExcludes>
+                    <!-- Exclude files from packaging -->
+                    <packagingExcludes>**/.classpath,**/.project,**/.settings/**</packagingExcludes>
+                    <!-- Exclude files from source directory -->
+                    <warSourceExcludes>**/.classpath,**/.project,**/.settings/**</warSourceExcludes>
                 </configuration>
             </plugin>
         </plugins>
